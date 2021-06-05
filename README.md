@@ -32,4 +32,8 @@ Code used to run and evaluate baseline AL algorithms.
 Simple script that searches for relevant pickled dictionaries and plots all computed AL algorithms' performance over time for the requested dataset.
 
 ## HyperOpt
-Used to perform hyperparameter tuning for algorithms. Uses TPE via the hyperopt package.
+Used to perform hyperparameter tuning for algorithms. Uses Tree Parzen Estimation.
+Built on the hyperopt package: http://hyperopt.github.io/hyperopt/
+
+## load_model
+Takes the best set of hyperparameters found via HyperOpt, and uses those to build VPLNN and VQNN.
